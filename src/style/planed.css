@@ -1,0 +1,122 @@
+.planed-box{
+    background-color: rgb(92, 194, 180);
+    display: flex;
+    flex-direction: row-reverse;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0.5rem;
+    animation-name: planed-box;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s; 
+    transform: translateY(+340px);
+}
+.planed-box-addItem{
+    animation-name: planed-3box;
+    animation-duration: 1s;
+    background-color: rgb(92, 140, 194);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 51vh;
+    border-radius: 10px 10px 0px 0px;
+    padding: 0.5rem;
+    transform: translateY(+210px);
+}
+
+._planed_box_daily{
+    background-color: #7e7259;
+    border-radius: 0.7rem;
+    width: 100%;
+    padding: 0 0 0 0.5rem;
+    margin-top: 2rem;
+    animation-name:_planed_box_animate;
+    animation-duration: 1s;
+    transform: translateX(0px);
+}
+
+._planed_box_designTask_{
+    background-color: rgb(44, 235, 69);
+    position: absolute;
+    top: 14rem;
+    border-radius: 0.7rem;
+    width: 95%;
+    padding: 0 0 0 0.5rem;
+    animation-name: _planed_box_designTasks;
+    animation-duration: 1s;
+    transform: translateY(0px);
+}
+
+._planed-nav{
+    background-color: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0 0.5rem 0 0.5rem ;
+}
+._planed-nav p{
+    font-weight: bold;
+    font-size: large;
+}
+._planed-nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+@keyframes planed-box {
+    0%{ transform: translateY(+550px);}
+    10%{ transform: translateY(+525px);}
+    20%{ transform: translateY(+501px);}
+    30%{ transform: translateY(+477px);}
+    40%{ transform: translateY(+453px);}
+    50%{ transform: translateY(+429px);}
+    60%{ transform: translateY(+405px);}
+    70%{ transform: translateY(+381px);}
+    80%{ transform: translateY(+357px);}
+    90%{ transform: translateY(+333px);}
+    100%{ transform:  translateY(+220px)} 
+}
+
+@keyframes planed-3box {
+    0%{ transform: translateY(+340px);}
+    10%{ transform: translateY(+328px);}
+    20%{ transform: translateY(+316px);}
+    30%{ transform: translateY(+304px);}
+    40%{ transform: translateY(+292px);}
+    50%{ transform: translateY(+280px);}
+    60%{ transform: translateY(+268px);}
+    70%{ transform: translateY(+256px);}
+    80%{ transform: translateY(+244px);}
+    90%{ transform: translateY(+232px);}
+    100%{ transform:  translateY(+220px)} 
+}
+
+@keyframes _planed_box_animate {
+    0%{ transform: translateX(300px);}
+    10%{ transform: translateX(270px);}
+    20%{ transform: translateX(240px);}
+    30%{ transform: translateX(210px);}
+    40%{ transform: translateX(180px);}
+    50%{ transform: translateX(150px);}
+    60%{ transform: translateX(120px);}
+    70%{ transform: translateX(90px);}
+    80%{ transform: translateX(60px);}
+    90%{ transform: translateX(30px);}
+    100%{ transform:  translateX(0px)} 
+}
+
+@keyframes _planed_box_designTasks {
+    0%{ top:8rem;}
+    10%{ top:8.6rem}
+    20%{ top:9.2rem }
+    30%{top:9.8rem }
+    30%{ top:10.4rem}
+    40%{ top:11rem}
+    50%{ top:11.6rem}
+    60%{ top:12.2rem}
+    70%{ top:12.8rem}
+    80%{ top:13.4rem}
+    90%{ top:14rem}
+    100%{top:14.6rem}
+}
