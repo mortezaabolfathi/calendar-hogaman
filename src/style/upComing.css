@@ -1,0 +1,71 @@
+.box-setting{
+    background-color: rgb(194, 189, 189);
+    flex-direction: row-reverse;
+    height: fit-content;
+    border-radius: 10px 10px 0px 0px;
+    transform: translateY(+630px); 
+    position: relative;
+    animation-name: animateUpComing;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-delay: 0s; 
+    transform: translateY(+330px);
+}
+
+.upComing{
+    /* background-color: rgb(30, 72, 187); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    gap:5px;
+    height: fit-content;
+    padding: 0.5rem;
+    position: relative;
+}
+
+
+.upComing p{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size: large;
+}
+
+._upComing_box_designWeekly{
+    background-color: #F8D58A;
+    border-radius: 0.7rem;
+    width: 100%;
+    padding: 0 0 0 10rem;
+}
+
+._upComing_box_designTasks{
+    background-color: #F3AFC7;
+    border-radius: 0.7rem;
+    width:100%;
+    padding: 0 0 0 10rem;
+}
+
+@keyframes animateUpComing {
+    0%{ transform: translateY(+549px);}
+    10%{ transform: translateY(+525px);}
+    20%{ transform: translateY(+501px);}
+    30%{ transform: translateY(+477px);}
+    40%{ transform: translateY(+453px);}
+    50%{ transform: translateY(+429px);}
+    60%{ transform: translateY(+405px);}
+    70%{ transform: translateY(+381px);}
+    80%{ transform: translateY(+357px);}
+    90%{ transform: translateY(+333px);}
+    100%{ transform: translateY(+309px);}
+}
+
+@media only screen and (max-width: 600px){
+    ._upComing_box_designWeekly{
+        padding: 0 0 0 1rem;
+    }
+    ._upComing_box_designTasks{
+        padding: 0 0 0 1rem;
+    }
+}
