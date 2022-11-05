@@ -10,4 +10,13 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;  
+}
+
+a{
+    color: black;
 }

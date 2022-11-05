@@ -3,13 +3,12 @@
     flex-direction: row-reverse;
     height: fit-content;
     border-radius: 10px 10px 0px 0px;
-    transform: translateY(+630px); 
     position: relative;
     animation-name: animateUpComing;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s; 
-    transform: translateY(+330px);
+    transform: translateY(+356px);
 }
 
 .upComing{
@@ -48,17 +47,17 @@
 }
 
 @keyframes animateUpComing {
-    0%{ transform: translateY(+549px);}
-    10%{ transform: translateY(+525px);}
-    20%{ transform: translateY(+501px);}
-    30%{ transform: translateY(+477px);}
-    40%{ transform: translateY(+453px);}
-    50%{ transform: translateY(+429px);}
-    60%{ transform: translateY(+405px);}
-    70%{ transform: translateY(+381px);}
-    80%{ transform: translateY(+357px);}
-    90%{ transform: translateY(+333px);}
-    100%{ transform: translateY(+309px);}
+    0%{ transform: translateY(+550px);}
+    10%{ transform: translateY(+529px);}
+    20%{ transform: translateY(+510px);}
+    30%{ transform: translateY(+481px);}
+    40%{ transform: translateY(+462px);}
+    50%{ transform: translateY(+443px);}
+    60%{ transform: translateY(+424px);}
+    70%{ transform: translateY(+405px);}
+    80%{ transform: translateY(+386px);}
+    90%{ transform: translateY(+367px);}
+    100%{ transform: translateY(+348px);}
 }
 
 @media only screen and (max-width: 600px){
