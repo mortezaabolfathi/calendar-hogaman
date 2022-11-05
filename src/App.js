@@ -1,9 +1,20 @@
+import "./style/app.css";
+import Layout from "./components/layout/layOut";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UpComing from "./components/upComing/UpComing";
+
 
 function App() {
   return (
-    <div className="App">
-     this is app
+    <div className="app">
+    <BrowserRouter>
+      <Routes>
+          <Route path="/" element = {<Layout/>}/>
+          <Route path="/upComing" element={<Layout> <UpComing/></Layout>}/>
+      </Routes>
+    </BrowserRouter>
     </div>
+    
   );
 }
 
