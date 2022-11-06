@@ -1,45 +1,102 @@
-.planed-box-addItem{
+.planed-box-addItem {
     animation-name: planed-3box;
     animation-duration: 0.5s;
-    background-color: rgb(92, 140, 194);
+    background-color: rgb(252, 252, 252);
     display: flex;
     flex-direction: row-reverse;
-    height: 51vh;
+    height: 65vh;
     border-radius: 10px 10px 0px 0px;
     padding: 0.5rem;
-    transform: translateY(+221px);
+    transform: translateY(-154px);
+}
+
+.planed-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    gap:5px;
+    height: fit-content;
+    padding: 0rem 0.25rem;
+    position: relative;
+}
+
+._planed_box_designWeekly{
+    background-color: #F8D58A;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+    margin-top: 1.5rem;
+}
+._planed_Location{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+    padding-top: 10px;
+}
+
+._planed_Location p{
+    /* padding: 10px 0px 10px 0px; */
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size:small;
+    color: rgb(85, 84, 84);
 }
 
 ._planed_box_daily{
-    background-color: #7e7259;
-    border-radius: 0.7rem;
+    border-radius: 1.5rem;
     width: 100%;
-    padding: 0 0 0 0.5rem;
+    padding: 1rem 0 0.5rem 1rem;
+    background-color: #9CC58C;
     margin-top: 2rem;
     animation-name:_planed_box_animate;
     animation-duration: 1s;
     transform: translateX(0px);
 }
 
+._planed_box_daily p:nth-child(1){
+    font-weight: bold;
+}
+
+._planed_Location_box_daily{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+._planed_Location_box_daily p{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size:small;
+    color: rgb(85, 84, 84);
+}
+
+
 ._planed_box_designTask_{
-    background-color: rgb(44, 235, 69);
+    background-color: #F3AFC7;
     position: absolute;
-    top: 14rem;
-    border-radius: 0.7rem;
+    top: 16rem;
+    border-radius: 1.5rem;
     width: 95%;
-    padding: 0 0 0 0.5rem;
+    padding: 1rem 0 0.5rem 1rem;;
     animation-name: _planed_box_designTasks;
-    animation-duration: 1s;
+    animation-duration: 0.7s;
     transform: translateY(0px);
 }
 
 ._planed-nav{
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding:0 0.5rem 0 0.5rem ;
 }
+
+
 ._planed-nav p{
     font-weight: bold;
     font-size: large;
@@ -49,6 +106,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    color: gray;
 }
 
 @keyframes planed-box {
@@ -66,17 +124,17 @@
 }
 
 @keyframes planed-3box {
-    0%{ transform: translateY(+340px);}
-    10%{ transform: translateY(+328px);}
-    20%{ transform: translateY(+316px);}
-    30%{ transform: translateY(+304px);}
-    40%{ transform: translateY(+292px);}
-    50%{ transform: translateY(+280px);}
-    60%{ transform: translateY(+268px);}
-    70%{ transform: translateY(+256px);}
-    80%{ transform: translateY(+244px);}
-    90%{ transform: translateY(+232px);}
-    100%{ transform:  translateY(+220px)} 
+    0% { transform: translateY(-85px);}
+    10%{ transform: translateY(-93px);}
+    20%{ transform: translateY(-107);}
+    30%{ transform: translateY(-118);}
+    40%{ transform: translateY(-125px);}
+    50%{ transform: translateY(-135px);}
+    60%{ transform: translateY(-142px);}
+    70%{ transform: translateY(-148px);}
+    80%{ transform: translateY(-149px);}
+    90%{ transform: translateY(-150px);}
+    100%{ transform:  translateY(-154px)} 
 }
 
 @keyframes _planed_box_animate {
@@ -105,5 +163,5 @@
     70%{ top:12.8rem}
     80%{ top:13.4rem}
     90%{ top:14rem}
-    100%{top:14.6rem}
+    100%{top:16rem}
 }
