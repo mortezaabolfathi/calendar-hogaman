@@ -10,7 +10,7 @@
     padding: 0.5rem;
     animation-name:box-design-weekly-animate;
     animation-duration: 0.5s;
-    transform: translateY(+120px);
+    transform: translateY(+104px);
     font-weight: bold;
     position: relative;
 }

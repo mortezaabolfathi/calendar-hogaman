@@ -1,0 +1,57 @@
+.calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    /* height: 70vh; */
+    /* background-color: #3b3b3b99; */
+}
+
+
+.dayNames {
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: large;
+    width: 100%;
+}
+
+.dayNumber {    /* display: flex; */
+    width: 100%;
+}
+
+.dayWeek {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+}
+
+.dayWeek div {
+    width: 40px;
+    text-align: center;
+    padding: 6px;
+}
+
+
+.selected{
+    background-color: rgb(121, 119, 119);
+    border-radius: 50%;
+}
+
+.before{
+    background-color: rgba(104, 93, 93, 0.37);
+    color: rgba(211, 210, 210, 0.425);
+    border-radius: 50%;
+}
+
+.today{
+background-color: rgb(255, 255, 255);
+}
+
