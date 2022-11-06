@@ -1,18 +1,17 @@
 .box-setting{
-    background-color: rgb(194, 189, 189);
+    background-color: rgb(252, 252, 252);
     flex-direction: row-reverse;
     height: fit-content;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 20px 20px 0px 0px;
     position: relative;
     animation-name: animateUpComing;
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s; 
-    transform: translateY(+356px);
+    transform: translateY(-77px);
 }
 
 .upComing{
-    /* background-color: rgb(30, 72, 187); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,10 +19,16 @@
     width: 100%;
     gap:5px;
     height: fit-content;
-    padding: 0.5rem;
+    padding: 1.5rem;
     position: relative;
 }
 
+.upComing a{
+    width: 100%;
+    text-align: start;
+    font-size: x-small;
+    margin-bottom: 1rem;
+}
 
 .upComing p{
     padding: 10px 0px 10px 0px;
@@ -32,39 +37,65 @@
     font-size: large;
 }
 
+._upcoming_Location{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+._upcoming_Location p{
+    padding: 10px 0px 10px 0px;
+    font-family: 'Merriweather Sans';
+    font-weight: bold;
+    font-size:small;
+    color: rgb(85, 84, 84);
+}
+
+.upComing p svg {
+    padding-right: 0.5rem;
+}
+
 ._upComing_box_designWeekly{
     background-color: #F8D58A;
-    border-radius: 0.7rem;
+    border-radius: 1.5rem;
     width: 100%;
-    padding: 0 0 0 10rem;
+    padding: 1rem 0 1rem 1rem;
+}
+._upComing_box_designWeekly p:nth-child(1){
+    font-weight: bold;
 }
 
 ._upComing_box_designTasks{
     background-color: #F3AFC7;
-    border-radius: 0.7rem;
-    width:100%;
-    padding: 0 0 0 10rem;
+    border-radius: 1.5rem;
+    width: 100%;
+    padding: 1rem 0 1rem 1rem;
+}
+
+._upComing_box_designTasks p:nth-child(1){
+    font-weight: bold;
 }
 
 @keyframes animateUpComing {
-    0%{ transform: translateY(+550px);}
-    10%{ transform: translateY(+529px);}
-    20%{ transform: translateY(+510px);}
-    30%{ transform: translateY(+481px);}
-    40%{ transform: translateY(+462px);}
-    50%{ transform: translateY(+443px);}
-    60%{ transform: translateY(+424px);}
-    70%{ transform: translateY(+405px);}
-    80%{ transform: translateY(+386px);}
-    90%{ transform: translateY(+367px);}
-    100%{ transform: translateY(+348px);}
+    0%{ transform: translateY(+220px);}
+    10%{ transform: translateY(+187px);}
+    20%{ transform: translateY(+154px);}
+    30%{ transform: translateY(+121px);}
+    40%{ transform: translateY(+80px);}
+    50%{ transform: translateY(+55px);}
+    60%{ transform: translateY(+22px);}
+    70%{ transform: translateY(-7px);}
+    80%{ transform: translateY(-30px);}
+    90%{ transform: translateY(-74px);}
+    100%{ transform: translateY(-77px);}
 }
 
 @media only screen and (max-width: 600px){
     ._upComing_box_designWeekly{
-        padding: 0 0 0 1rem;
+        padding: 0.5rem 0 0.5rem 1rem;
     }
     ._upComing_box_designTasks{
-        padding: 0 0 0 1rem;
+        padding: 0.5rem 0 0.5rem 1rem;
     }
 }
