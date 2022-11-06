@@ -1,8 +1,10 @@
 .app{
-    background-image: url("./../assets/image/20220722_184750.jpg");
+    background-image: url("./../assets/image/background-image-hogaman.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
     position: relative;
 }
 *{
