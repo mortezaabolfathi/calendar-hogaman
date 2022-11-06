@@ -1,20 +1,22 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const calendar =createSlice ({
+export const calendar = createSlice ({
     name : "calendar",
     initialState:{
-        clock:""
+        clock:"",
+        month:""
     },
     reducers:{
-        getDay:(state, action) => {
-          
+        getMonth:(state, action) => {
+          const monthInCalendar = action.payload;
+          state.month = monthInCalendar;
         },
         getTime:(state, action) => {
-            const timeClock=action.payload
-            state.clock=timeClock;
+            const timeClock = action.payload
+            state.clock = timeClock;
         }
     }
 })
 
-export const {getDay, getTime} = calendar.actions;
+export const {getMonth, getTime} = calendar.actions;
 export default calendar.reducer;
