@@ -8,7 +8,7 @@
     animation-duration: 0.5s;
     animation-timing-function: linear;
     animation-delay: 0s; 
-    transform: translateY(-77px);
+    transform: translateY(-16px);
 }
 
 .upComing{
@@ -79,16 +79,16 @@
 
 @keyframes animateUpComing {
     0%{ transform: translateY(+220px);}
-    10%{ transform: translateY(+187px);}
-    20%{ transform: translateY(+154px);}
-    30%{ transform: translateY(+121px);}
-    40%{ transform: translateY(+80px);}
-    50%{ transform: translateY(+55px);}
-    60%{ transform: translateY(+22px);}
-    70%{ transform: translateY(-7px);}
-    80%{ transform: translateY(-30px);}
-    90%{ transform: translateY(-74px);}
-    100%{ transform: translateY(-77px);}
+    10%{ transform: translateY(+167px);}
+    20%{ transform: translateY(+134px);}
+    30%{ transform: translateY(+111px);}
+    40%{ transform: translateY(+70px);}
+    50%{ transform: translateY(+40px);}
+    60%{ transform: translateY(+30px);}
+    70%{ transform: translateY(10px);}
+    80%{ transform: translateY(0px);}
+    90%{ transform: translateY(-10px);}
+    100%{ transform: translateY(-16px);}
 }
 
 @media only screen and (max-width: 600px){
@@ -97,5 +97,25 @@
     }
     ._upComing_box_designTasks{
         padding: 0.5rem 0 0.5rem 1rem;
+    }
+    .box-setting{
+        animation-name: animateUpComing;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-delay: 0s; 
+        transform: translateY(-77px);
+    }
+    @keyframes animateUpComing {
+        0%{ transform: translateY(+220px);}
+        10%{ transform: translateY(+187px);}
+        20%{ transform: translateY(+154px);}
+        30%{ transform: translateY(+121px);}
+        40%{ transform: translateY(+80px);}
+        50%{ transform: translateY(+55px);}
+        60%{ transform: translateY(+22px);}
+        70%{ transform: translateY(-7px);}
+        80%{ transform: translateY(-30px);}
+        90%{ transform: translateY(-74px);}
+        100%{ transform: translateY(-77px);}
     }
 }

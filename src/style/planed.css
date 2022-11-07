@@ -1,5 +1,5 @@
 .planed-box-addItem {
-    animation-name: planed-3box;
+    animation-name: planed-box-addItem-animate;
     animation-duration: 0.5s;
     background-color: rgb(252, 252, 252);
     display: flex;
@@ -7,7 +7,7 @@
     height: 65vh;
     border-radius: 10px 10px 0px 0px;
     padding: 0.5rem;
-    transform: translateY(-154px);
+    transform: translateY(-125px);
 }
 
 .planed-box{
@@ -81,7 +81,7 @@
     position: absolute;
     top: 16rem;
     border-radius: 1.5rem;
-    width: 95%;
+    width: 100%;
     padding: 1rem 0 0.5rem 1rem;;
     animation-name: _planed_box_designTasks;
     animation-duration: 0.7s;
@@ -123,18 +123,18 @@
     100%{ transform:  translateY(+220px)} 
 }
 
-@keyframes planed-3box {
+@keyframes planed-box-addItem-animate {
     0% { transform: translateY(-85px);}
-    10%{ transform: translateY(-93px);}
-    20%{ transform: translateY(-107);}
-    30%{ transform: translateY(-118);}
-    40%{ transform: translateY(-125px);}
-    50%{ transform: translateY(-135px);}
-    60%{ transform: translateY(-142px);}
-    70%{ transform: translateY(-148px);}
-    80%{ transform: translateY(-149px);}
-    90%{ transform: translateY(-150px);}
-    100%{ transform:  translateY(-154px)} 
+    10%{ transform: translateY(-86px);}
+    20%{ transform: translateY(-87px);}
+    30%{ transform: translateY(-89px);}
+    40%{ transform: translateY(-90px);}
+    50%{ transform: translateY(-93px);}
+    60%{ transform: translateY(-95px);}
+    70%{ transform: translateY(-100px);}
+    80%{ transform: translateY(-110px);}
+    90%{ transform: translateY(-115px);}
+    100%{ transform:  translateY(-125px)} 
 }
 
 @keyframes _planed_box_animate {
@@ -164,4 +164,24 @@
     80%{ top:13.4rem}
     90%{ top:14rem}
     100%{top:16rem}
+}
+
+@media only screen and (max-width:600px){
+    .planed-box-addItem{
+        animation-name: planed-box-addItem-animate;
+        transform: translateY(-154px);
+    }
+    @keyframes planed-box-addItem-animate {
+        0% { transform: translateY(-85px);}
+        10%{ transform: translateY(-93px);}
+        20%{ transform: translateY(-107);}
+        30%{ transform: translateY(-118);}
+        40%{ transform: translateY(-125px);}
+        50%{ transform: translateY(-135px);}
+        60%{ transform: translateY(-142px);}
+        70%{ transform: translateY(-148px);}
+        80%{ transform: translateY(-149px);}
+        90%{ transform: translateY(-150px);}
+        100%{ transform:  translateY(-154px)} 
+    }
 }

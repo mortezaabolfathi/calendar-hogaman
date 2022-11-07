@@ -10,7 +10,7 @@
     padding: 2rem 1.5rem 0rem 1.5rem;
     animation-name:box-design-weekly-animate;
     animation-duration: 0.5s;
-    transform: translateY(+34px);
+    transform: translateY(+50px);
     font-weight: bold;
     position: relative;
 }
@@ -76,14 +76,45 @@ padding-top: 10px;
 
 @keyframes box-design-weekly-animate {
     0%{ transform: translateY(82px);}
-    10%{ transform: translateY(77px);}
-    20%{ transform: translateY(70px);}
-    30%{ transform: translateY(64px);}
-    40%{ transform: translateY(58px);}
-    50%{ transform: translateY(52px);}
-    60%{ transform: translateY(46px);}
-    70%{ transform: translateY(43px);}
-    80%{ transform: translateY(40px);}
-    90%{ transform: translateY(37px);}
-    100%{ transform:  translateY(34px);} 
+    10%{ transform: translateY(78px);}
+    20%{ transform: translateY(75px);}
+    30%{ transform: translateY(72px);}
+    40%{ transform: translateY(70px);}
+    50%{ transform: translateY(67px);}
+    60%{ transform: translateY(63px);}
+    70%{ transform: translateY(58px);}
+    80%{ transform: translateY(55px);}
+    90%{ transform: translateY(52px);}
+    100%{ transform:  translateY(50px);} 
 }
+
+@media only screen and (max-width:600px){
+    .box-design-weekly{
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        gap: 0.5rem;
+        height: 75vh;
+        border-radius: 20px 20px 0px 0px;
+        padding: 2rem 1.5rem 0rem 1.5rem;
+        animation-name:box-design-weekly-animate;
+        animation-duration: 0.5s;
+        transform: translateY(+34px);
+        font-weight: bold;
+        position: relative;
+    }
+    @keyframes box-design-weekly-animate {
+        0%{ transform: translateY(82px);}
+        10%{ transform: translateY(77px);}
+        20%{ transform: translateY(70px);}
+        30%{ transform: translateY(64px);}
+        40%{ transform: translateY(58px);}
+        50%{ transform: translateY(52px);}
+        60%{ transform: translateY(46px);}
+        70%{ transform: translateY(43px);}
+        80%{ transform: translateY(40px);}
+        90%{ transform: translateY(37px);}
+        100%{ transform:  translateY(34px);} 
+    }
+}    
