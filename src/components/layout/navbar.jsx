@@ -7,9 +7,11 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <FontAwesomeIcon icon={faPlus} />
+      <div className="setting">
        <Link to="/upComing">
          <FontAwesomeIcon icon={faGear} /> 
        </Link>
+      </div>
        <Link to="/">
         <FontAwesomeIcon icon={faHouse} />
        </Link>
